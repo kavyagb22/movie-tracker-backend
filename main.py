@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import httpx
 
-from lib.tmdb.tmdb_client import get_collection, search_collection, get_franchise_by_name, get_franchise, get_curated_franchise
+from functions.tmdb.tmdb_client import get_collection, search_collection, get_franchise_by_name, get_franchise, get_curated_franchise
 from comp.franchise import Collection, Franchise
 from typing import Optional
 from utils.helpers.tmdb import raise_tmdb_error
